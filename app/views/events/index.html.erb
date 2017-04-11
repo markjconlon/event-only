@@ -5,7 +5,7 @@
 </p>
 
 <% @events.each do |event| %>
-  <h2><%= event.name %> </h2>
+  <h2><%= link_to event.name, event %> </h2>
   <p><%= event.city %></p>
   <p><%= event.date %></p>
   <p><%= event.capacity %></p>
