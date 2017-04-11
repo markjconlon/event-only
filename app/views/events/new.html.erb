@@ -1,5 +1,25 @@
-<%= form_for event do |f| %>
-  <%= render "shared/errors", object: event %>
-  <%= f.text_field :field %>
+<%= form_for @event do |f| %>
+  <div>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  </div>
 
+  <div>
+  <%= f.label :date %>
+  <%= f.date_field :date %>
+  </div>
+
+  <div>
+  <%= f.label :capacity %>
+  <%= f.number_field :capacity %>
+  </div>
+
+  <div>
+  <%= f.label :city %>
+  <%= f.text_field :city %>
+  </div>
+
+  <div>
+    <%= f.submit %>
+  </div>
 <% end %>
